@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/fundo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+button {
+    background-color: #FDFDFD;
+    color: #540B0E;
+    border: 2px solid #540B0E;
+    padding: 0.3em 0.6em;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #540B0E;
+}
+
+button:hover > i {
+    color: #FFF;
+}
+
+button i {
+    color: #540B0E;
+    font-weight: bold;  
+    pointer-events: none;  
+}
+
+input {
+    padding: 0.25em 0.5em;
+}
+
+.todo-container {
+    max-width: 280px;
+    min-height: 650px;
+    margin: 3em auto 0;
+    background-color: #00000080;
+    padding: 1.5em;
+    border-radius: 15px;    
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1em 1em;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#todo-formulario {
+    padding: 1em;
+    border-bottom: 1px solid white;
+}
+
+#todo-formulario p {
+    margin-bottom: .5em;
+    font-weight: bold;
+    color: white;
+}
+
+.control-formulario {
+    display: flex;
+}
+
+.control-formulario input {
+    margin-right: .3em;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid #CCC;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9em;
+    color: white;
+}
+
+.todo button {
+    margin-left: 0.4em;
+}
+
+.realizado {
+    background-color: #872D30;
+}
+
+.realizado h3 {
+    color: #FFF;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;    
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #540B0E;
+    transition: 0.2s;
+}
+
+@media screen and (min-width: 568px) {
+    .todo-container {
+        min-width: 500px;
+        min-height: 760px;
+    }    
+}
+
+@media screen and (min-width: 768px) {
+    .todo-container {
+        min-width: 700px;
+        min-height: 860px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .todo-container {
+        min-width: 980px;
+    }
+}
